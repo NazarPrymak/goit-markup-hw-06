@@ -201,9 +201,11 @@ font-family: "Raleway", sans-serif;
 /* section two */
 .conteiner-two {
     width: 1158px;
-    padding: 0 15px;
+    /* min-width: 320px; */
+    /* padding: 0 15px; */
+    padding: 0 16px;
     margin: 0 auto;
-
+    
 }
 
 .visually-hidden {
@@ -223,13 +225,15 @@ font-family: "Raleway", sans-serif;
 
 .advantages-list {
     display: flex;
-
-    gap: 24px;
+    flex-direction: column;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .advantages-item {
-    width: calc((100% - 72px) / 4);
-
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
+    
 }
 
 .advantages-icon {
@@ -238,7 +242,8 @@ font-family: "Raleway", sans-serif;
     width: 264px;
     height: 112px;
     background-color: #f4f4fd;
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
     transition: background-color;
@@ -249,22 +254,29 @@ font-family: "Raleway", sans-serif;
 
 .title-strategy {
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
+    /* font-weight: 500; */
+    font-weight: 700;
+    /* font-size: 20px; */
+    font-size: 36px;
+    /* line-height: 120%; */
+    line-height: 111%;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
+    
 
 }
 
 .strategy-info {
 
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
+    
 
 }
 
@@ -1015,14 +1027,21 @@ input::placeholder {
                     url(../images/people-office-tablet@2x.jpg);
             }
         }
+
+.conteiner-two{
+    min-width: 768px;
+    flex-wrap: nowrap;
 }
 
+.advantages-list{
+    gap: 24px;
+   
+}
 
-
-
-/* -------------2----------------- */
-
-
+.advantages-item{
+flex-basis: calc((100% - 192px) / 2);
+}
+}
 
 /* ------------------------------------------------------------------------ */
 
