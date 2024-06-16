@@ -512,10 +512,10 @@ width: 100%;
 /* Footer */
 
 .footer-conteiner {
-    min-width: 320px;
+    /* min-width:320px; */
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    /* align-items: baseline; */
 
 }
 
@@ -575,7 +575,8 @@ width: 100%;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    padding-left: 112px;
+    text-align: center;
+    
 }
 
 .icons-list-footer {
@@ -586,7 +587,10 @@ width: 100%;
     align-self: flex-end;
     justify-content: center;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom:72px;
+    /* padding: 0 56px; */
+    padding: 0 auto;
+
     /* padding-top: 8px; */
 }
 
@@ -621,22 +625,25 @@ width: 100%;
     background-color: #31d0aa;
 }
 
-/* ---------------------------- */
 .text-subscribe {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16px; 
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    margin-left: 80px;
+    text-align: center;
+    /* margin-left: 80px; */
+    /* margin-left: 122px; */
 }
 
 .form {
     display: flex;
 flex-direction: column;
     gap: 24px;
-    margin-left: 80px;
+    align-items: center;
+    /* margin-left: 80px; */
+
 }
 
 .form-input {
@@ -651,7 +658,9 @@ flex-direction: column;
     letter-spacing: 0.04em;
     color: #ffffff;
     padding-left: 16px;
+    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        opacity: 0.3;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1097,6 +1106,23 @@ width: calc((100% - 24px) / 2);
     width: calc((100% - 24px) / 2);
 }
 
+.footer-conteiner{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 96px 108px;
+}
+.text-subscribe{
+    text-align: start;
+}
+.icons-list-footer{
+    align-items: end;
+}
+.form{
+    flex-direction: row;
+}
+
 
 }
 
@@ -1158,5 +1184,32 @@ width: calc((100% - 24px) / 2);
                 }
                 /* FOOTER */
 
+        .footer-conteiner{
+            flex-wrap: nowrap;
+        }
+                /* .footer{
+                    padding: 0;
+                }
+                .footer-logo-text{
+                    padding: 100px 120px 100px 156px;
+                }
+                .footer-text{
+                    margin: 0;
+                }
+                .social-media-footer{
+                padding-top: 100px;
+                } */
+                .footer-conteiner{
+                    align-items: baseline;
+                }
+                .footer {
+                    padding: 96px 80px;
+                }
+                .text-subscribe{
+                    padding-left: 24px;
+                }
+                                .form{
+                                    padding-left: 24px;
+                                }
 }
 
