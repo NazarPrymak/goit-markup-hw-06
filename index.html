@@ -58,15 +58,15 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="btn-menu" data-modal-open>
+        <button type="button" class="btn-menu js-open-menu">
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solidmenu"></use>
           </svg>
         </button>
         <!---------is-open -->
-        <div class="modal-menu is-open" data-modal>
+        <div class="modal-menu is-open js-menu-container">
           <div class="mob-backdrop">
-            <button type="button" class="close-menu" data-modal-close>
+            <button type="button" class="close-menu js-close-menu">
               <svg class="icon-close-menu" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
@@ -449,18 +449,24 @@
               <div class="box-transform">
                 <picture>
                   <source
-                    src="./images/imgCashlessPayment.jpg 1x,
-                    ./images/imgCashlessPayment2x.jpg 2x"
+                    srcset="
+                      ./images/imgCashlessPayment.jpg   1x,
+                      ./images/imgCashlessPayment2x.jpg 2x
+                    "
                     media="(min-width:1158px)"
                   />
                   <source
-                    src="./images/imgCashlessPayment-tablet.jpg 1x,
-                    ./images/imgCashlessPayment-tablet2x.jpg 2x"
+                    srcset="
+                      ./images/imgCashlessPayment-tablet.jpg   1x,
+                      ./images/imgCashlessPayment-tablet2x.jpg 2x
+                    "
                     media="(min-width:768px)"
                   />
                   <source
-                    src="./images/imgCashlessPayment-mobil.jpg 1x, 
-                    ./images/imgCashlessPayment-mobil2x.jpg 2x"
+                    srcset="
+                      ./images/imgCashlessPayment-mobil.jpg   1x,
+                      ./images/imgCashlessPayment-mobil2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -486,18 +492,24 @@
               <div class="box-transform">
                 <picture>
                   <source
-                    src="./images/imgMeditationApp.jpg 1x, 
-                  ./images/imgMeditationApp2x.jpg 2x"
+                    srcset="
+                      ./images/imgMeditationApp.jpg   1x,
+                      ./images/imgMeditationApp2x.jpg 2x
+                    "
                     media="(min-width:1158px)"
                   />
                   <source
-                    src="./images/imgMeditationApp-tablet.jpg 1x, 
-                  ./images/imgMeditationApp-tablet2x.jpg 2x"
+                    srcset="
+                      ./images/imgMeditationApp-tablet.jpg   1x,
+                      ./images/imgMeditationApp-tablet2x.jpg 2x
+                    "
                     media="(min-width:768px)"
                   />
                   <source
-                    src="./images/imgMeditationApp-mobil.jpg 1x, 
-                  ./images/imgMeditationApp-mobil2x.jpg 2x"
+                    srcset="
+                      ./images/imgMeditationApp-mobil.jpg   1x,
+                      ./images/imgMeditationApp-mobil2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -524,18 +536,24 @@
               <div class="box-transform">
                 <picture>
                   <source
-                    src="./images/imgTaxiService.jpg 1x, 
-                    ./images/imgTaxiService2x.jpg 2x"
+                    srcset="
+                      ./images/imgTaxiService.jpg   1x,
+                      ./images/imgTaxiService2x.jpg 2x
+                    "
                     media="(min-width:1158px)"
                   />
                   <source
-                    src="./images/imgTaxiService-tablet.jpg 1x, 
-                    ./images/imgTaxiService-tablet2x.jpg 2x"
+                    srcset="
+                      ./images/imgTaxiService-tablet.jpg   1x,
+                      ./images/imgTaxiService-tablet2x.jpg 2x
+                    "
                     media="(min-width:768px)"
                   />
                   <source
-                    src="./images/imgTaxiService-mobil.jpg 1x, 
-                    ./images/imgTaxiService-mobil2x.jpg 2x"
+                    srcset="
+                      ./images/imgTaxiService-mobil.jpg   1x,
+                      ./images/imgTaxiService-mobil2x.jpg 2x
+                    "
                     media="(max-width:767px)"
                   />
                   <img
@@ -561,15 +579,24 @@
               <div class="box-transform">
                 <picture>
                   <source
-                    src="./images/imgScreenIllustrations.jpg 1x, ./images/imgScreenIllustrations2x.jpg 2x "
+                    srcset="
+                      ./images/imgScreenIllustrations.jpg   1x,
+                      ./images/imgScreenIllustrations2x.jpg 2x
+                    "
                     media="(min-width:1158px)"
                   />
                   <source
-                    src="./images/imgScreenIllustrations-tablet.jpg 1x, ./images/imgScreenIllustrations-tablet2x.jpg 2x "
+                    srcset="
+                      ./images/imgScreenIllustrations-tablet.jpg   1x,
+                      ./images/imgScreenIllustrations-tablet2x.jpg 2x
+                    "
                     media="(min-width:768px)"
                   />
                   <source
-                    src="./images/imgScreenIllustrations-mobil.jpg 1x, ./images/imgScreenIllustrations-mobil2x.jpg 2x "
+                    srcset="
+                      ./images/imgScreenIllustrations-mobil.jpg   1x,
+                      ./images/imgScreenIllustrations-mobil2x.jpg 2x
+                    "
                     media="(max-width:767px)"
                   />
                   <img
@@ -595,15 +622,24 @@
               <div class="box-transform">
                 <picture>
                   <source
-                    src="./images/imgOnlineCourses.jpg 1x, ./images/imgOnlineCourses2x.jpg 2x"
+                    srcset="
+                      ./images/imgOnlineCourses.jpg   1x,
+                      ./images/imgOnlineCourses2x.jpg 2x
+                    "
                     media="(min-width:1158px)"
                   />
                   <source
-                    src="./images/imgOnlineCourses-tablet.jpg 1x, ./images/imgOnlineCourses-tablet2x.jpg 2x"
+                    srcset="
+                      ./images/imgOnlineCourses-tablet.jpg   1x,
+                      ./images/imgOnlineCourses-tablet2x.jpg 2x
+                    "
                     media="(min-width:768px)"
                   />
                   <source
-                    src="./images/imgOnlineCourses-mobil.jpg 1x, ./images/imgOnlineCourses-mobil2x.jpg 2x"
+                    srcset="
+                      ./images/imgOnlineCourses-mobil.jpg   1x,
+                      ./images/imgOnlineCourses-mobil2x.jpg 2x
+                    "
                     media="(max-width:767px)"
                   />
                   <img
@@ -696,7 +732,7 @@
     </footer>
 
     <!--class="is-open" -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="model">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
